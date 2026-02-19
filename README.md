@@ -1,4 +1,3 @@
-````markdown
 # Inxi Dash
 
 Modern, production-ready Linux system dashboard powered by `inxi`.

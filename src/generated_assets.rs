@@ -9,10 +9,8 @@ pub enum AssetContent {
 
 pub fn get_asset(path: &str) -> Option<(&'static str, AssetContent)> {
     match path {
-        "/static/README.md" => Some(("application/octet-stream", AssetContent::Binary(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/README.md"))))),
         "/static/css/app.css" => Some(("text/css", AssetContent::Text(include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/css/app.css"))))),
         "/static/css/melt.css" => Some(("text/css", AssetContent::Text(include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/css/melt.css"))))),
-        "/static/example.html" => Some(("application/octet-stream", AssetContent::Binary(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/example.html"))))),
         "/static/icons/chip.png" => Some(("image/png", AssetContent::Binary(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/icons/chip.png"))))),
         "/static/icons/graphics-card.png" => Some(("image/png", AssetContent::Binary(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/icons/graphics-card.png"))))),
         "/static/icons/keyboard-and-mouse.png" => Some(("image/png", AssetContent::Binary(include_bytes!(concat!(env!("CARGO_MANIFEST_DIR"), "/static/icons/keyboard-and-mouse.png"))))),

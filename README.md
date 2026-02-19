@@ -1,21 +1,3 @@
-## Repository Title
-
-**Inxi Dash — Modern Linux System Dashboard powered by inxi**
-
-Alternatif kısa başlık:
-**Inxi Dash | Local System Dashboard for Linux**
-
----
-
-## GitHub Description (Short)
-
-A modern, self-contained Linux system dashboard built on top of inxi.
-Provides a structured JSON API, embedded static assets, and a clean web UI with dark/light theme support.
-
----
-
-# README.md (Önerilen İçerik)
-
 ````markdown
 # Inxi Dash
 
